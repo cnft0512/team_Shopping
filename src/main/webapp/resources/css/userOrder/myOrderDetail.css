@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.cancel_order{
+   margin-bottom: 20px;
+}
+.order-items table{
+   border: 1px solid silver;
+}
+
+.order-items th{
+   border: 1px solid black;
+   width: 300px;
+}
+.order-items jb-th-1{
+   width: 150px;
+}
+
+.order-item-details jb-th-1{
+   width: 150px;
+}
+table {
+   width: 500px;
+   padding: 10px;
+}

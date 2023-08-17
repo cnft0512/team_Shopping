@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* 홈페이지 메인 */
+.content_area {
+   width: 100%;
+   height: auto;
+   text-align: center;
+   overflow: hidden;
+}
+
+/* 구간 나누기 */
+/* 칼럼 컨테이너 */
+.column-container {
+   width: 70%;
+   overflow-x: hidden;
+   margin: 0 auto;
+   margin-top: 100px;
+   height: 500px;
+}
+
+/* 왼쪽 */
+.div_left{
+   float: left;
+   width: 60%;
+   height: 100%;
+   
+}
+
+/* 오른쪽 */
+.div_right{
+   float: right;
+   width: 30%;
+   height: 500px;
+   margin: 20px;
+   padding-top: 50px;
+   text-align: left;
+}
+
+/* 버튼 */
+.button_quantity{
+   margin-top: 30px;   
+   margin-bottom: 30px;
+}
+
+.btn_cart{
+	width: 100%;
+	text-align: center;
+}
+
+.button_set a{
+   text-decoration: none;
+   border: 1px solid black;
+   border-radius: 2px;
+   background-color: #ccc;
+   display: inline-block;
+   padding: 10px;
+   width: 100%;
+   background-color: black;
+   color: white;
+}
+

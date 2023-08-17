@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 홈페이지 메인 */
+.content_area {
+	width: 100%;
+	height: 1000px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.section_left {
+	float: left;
+	width: 50%;
+}
+.section_right {
+	float: right;
+	width: 50%;
+}
+
+button {
+	text-align: center;
+	background: grey;
+}
+
+.addr1_input {
+	width: 300px;
+}
+.addr2_input {
+	width: 300px;
+}
+
+/* 회원 정보 유효성 검사 */
+.final_tel_check {
+	color: red;
+	display: none;
+	float: left;
+	font-size: 15px;
+}
+.final_email_check {
+	color: red;
+	display: none;
+	float: left;
+	font-size: 15px;
+}
+.final_addr_check {
+	color: red;
+	display: none;
+	float: left;
+	font-size: 15px;
+}
+
+/* 비밀번호 유효성 검사 */
+.current_pwck_input_re_1 {
+	color: blue;
+	display: none;
+	float: left;
+	font-size: 15px;
+}
+.current_pwck_input_re_2 {
+	color: red;
+	display: none;
+	float: left;
+	font-size: 15px;
+}
+.new_pwck_input_re_1 {
+	color: blue;
+	display: none;
+	float: left;
+	font-size: 15px;
+}
+.new_pwck_input_re_2 {
+	color: red;
+	display: none;
+	float: left;
+	font-size: 15px;
+}
+.new_pwck_input_re_3 {
+	color: blue;
+	display: none;
+	float: left;
+	font-size: 15px;
+}
+

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 홈페이지 메인 */
+.content_area {
+	width: 100%;
+	height: 1000px;
+	text-align: center;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.top_btn {
+	float: right;
+}
+
+button {
+	float: right;
+}
+
+textarea {
+	width: 100%;
+	height: 100%;
+}
+
+#question_area {
+	float: left;
+}
+
+#answer_area {
+	float: left;
+}
+
+.qna_table {
+	width: 100%;
+}
+
+/* table head */
+.qnaNum_width {
+	width: 15%;
+	background: grey;
+}
+
+.qnaStatus_width {
+	width: 15%;
+	background: grey;
+}
+
+.qnaTitle_width {
+	width: 15%;
+	background: grey;
+}
+
+.prodNum_width {
+	width: 15%;
+	background: grey;
+}
+
+.id_width {
+	width: 15%;
+	background: grey;
+}
+
+.qnaPostDate_width {
+	width: 15%;
+	background: grey;
+}

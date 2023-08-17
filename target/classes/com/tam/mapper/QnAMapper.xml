@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tam.mapper.QnAMapper">
+
+	<select id="selectAll" resultType="com.tam.model.QnaVO">
+		select * from qna where prodNum = ${prodNum}
+	</select>
+		
+	<select id="selectCount" resultType="int">
+		select count(*) from qna
+	</select>
+	
+	<select id="selectOne" resultType="com.tam.model.QnaVO">
+		select * from qna where qnaNum = #{qnaNum}
+	</select>
+
+	<insert id="postQnA">
+		insert into qna(qnaNum, qnaStatus, qnaTitle, prodNum, id, qnaContent, qnaPostDate) 
+		values(qna_seq.nextval, '미등록', #{qnaTitle}, #{prodNum}, #{id}, #{qnaContent}, sysdate)
+	</insert>
+
+	<update id="updateQ">
+		update qna set qnaTitle = #{qnaTitle}, qnaContent = #{qnaContent}, qnaPostDate = sysdate where qnaNum = #{qnaNum}
+	</update>
+	
+	<update id="updateA">
+		update qna set qnaStatus = #{qnaStatus}, anqContent = #{anqContent}, anqPostDate = sysdate where qnaNum = #{qnaNum}
+	</update>
+
+	<delete id="deleteQ">
+		delete from qna where qnaNum = #{qnaNum}
+	</delete>
+	
+	<update id="deleteA">
+		update qna set qnaStatus = '미등록', anqContent = null, anqPostDate = null where qnaNum = #{qnaNum}
+	</update>
+	
+</mapper>

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/*관리자 페이지 컨텐츠 영역*/
+.admin_content_wrap {
+	margin: 0 auto;
+	width: 90%;
+	height: 90%;
+	margin-top: 40px;
+	position: relative;
+}
+
+/* 상품목록 list */
+.memberList {
+	font-size: 15px;
+	height: 20%;
+	border-radius: 5px;
+	border-spacing: 0;
+	margin-bottom: 10px;
+}
+
+thead{
+	background-color: #ccc;
+	height: 40px;
+}
+
+tbody > tr{
+	height: 30px;
+}
+
+tbody tr:hover { 
+	background-color: skyblue;
+}
+
+th, td {
+	text-align: center;
+}
+
+.id_width {width: 100px;}
+.name_width {width: 80px;}
+.tel_width {width: 170px;}
+.addr1_width {width: 300px;}
+.addr2_width {width: 100px;}
+.email_width {width: 200px;}
+.adminCk_width {width: 80px;}
+
+/* 페이지 이동 영역 */
+.pageInfo_wrap{
+	height: 20%;
+}
+.pageInfo_area {
+   list-style: none;
+   display: inline-block;
+}
+.pageInfo_area li {
+   float: left;
+   font-size: 20px;
+   margin-left: 18px;
+   padding: 7px;
+   font-weight: 500;
+}
